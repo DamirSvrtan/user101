@@ -1,0 +1,44 @@
+@import "bootstrap";
+
+	@mixin box_sizing 
+	{
+ 	-moz-box-sizing: border-box; 
+  	-webkit-box-sizing: border-box; 
+  	box-sizing: border-box;
+	}
+	
+	.debug_dump {
+ 		 clear: both;
+ 		 float: left;
+ 		 width: 100%;
+ 		 margin-top: 650px;
+ 		 @include box_sizing;
+	 }
+	
+	input, textarea, select, .uneditable-input {
+ 	 border: 1px solid #bbb;
+ 	 width: 300px;
+	 padding: 10px;
+ 	 height: 35px;
+ 	 margin-bottom: 15px;
+ 	 @include box_sizing;
+	}
+
+	#error_explanation {
+  		color: #f00;
+  		ul {
+  		  list-style: none;
+  		  margin: 0 0 18px 0;
+  		}
+	}
+
+	.field_with_errors {
+		  @extend .control-group;
+		  @extend .error;
+	 }
+	
+	.alert-success
+	{
+	background-color:#E0E0E0;
+	border-color:#E0E0E0;
+	}

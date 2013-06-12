@@ -1,0 +1,7 @@
+Description:
+    Creates a user model with a login/register page, controllers, helpers, a stylesheet and a migration file, updates the routes.rb.
+    Pre-installation of bcrypt and twitter-bootstrap gems required.
+    After the generator has done it's work, run rake db:migrate.
+
+Example:
+    rails generate user101

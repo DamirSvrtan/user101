@@ -1,0 +1,23 @@
+	<h1 id='form-header'>Registration</h1>
+	<br>
+
+    <%= form_for(@user) do |f| %>
+      <%= render 'shared/error_messages' %>
+
+      <b><%= f.label :name , "Name" %></b>
+      <%= f.text_field :name %>
+
+      <%= f.label :email, "E-mail"%>
+      <%= f.text_field :email %>
+
+      <%= f.label :password, "Password:" %>
+      <%= f.password_field :password %>
+
+      <%= f.label :password_confirmation, "Password Confirmation:" %>
+      <%= f.password_field :password_confirmation %>
+      <br/>
+      <%= f.submit "Register", class: "btn btn-inverse btn-large" %>
+    <% end %>
+
+      <p>Registered user? <%= link_to "Login!", signin_path %></p>
+
